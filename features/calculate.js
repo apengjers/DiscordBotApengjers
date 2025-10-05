@@ -94,8 +94,8 @@ module.exports = async function setupAnotherFeature(client) {
         else hargaPerM = hargaNormal;
 
         const totalHarga = nominal * hargaPerM;
-        const estimasiProses = Math.ceil((nominal + nominal * 0.10) * 24);
-        const estimasiProsesGp = Math.ceil((nominal + nominal * 0.10) * 15);
+        const estimasiProses = Math.ceil((nominal + nominal * 0.10) * 12);
+        const estimasiProsesGp = Math.ceil((nominal + nominal * 0.10) * 10);
 
         const selesai = new Date(Date.now() + estimasiProses * 60000)
           .toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' });

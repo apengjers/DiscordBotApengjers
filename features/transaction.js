@@ -27,7 +27,7 @@ module.exports = async function setupTransactionFeature(client) {
       .setStyle(ButtonStyle.Primary),
   );
 
-  // Cek pesan lama dan update kalau perlu (optional)
+  // Cek Msg Lama
   const messages = await channel.messages.fetch({ limit: 10 });
   const existingMessage = messages.find(msg =>
     msg.author.id === client.user.id &&
